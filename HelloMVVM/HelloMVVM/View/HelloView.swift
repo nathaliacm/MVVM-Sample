@@ -88,7 +88,11 @@ class HelloView: UIView {
     }
     
     @objc private func didTapButton() {
-        controller?.handleEvent(firstName: firstName)
+        do {
+            try controller?.handleEvent(firstName: firstName)
+        } catch {
+            firstName = "Error"
+        }
     }
     
     @objc private func textFieldDidChange(_ textField: UITextField) {

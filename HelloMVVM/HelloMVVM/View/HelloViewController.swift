@@ -34,9 +34,9 @@ class HelloViewController: UIViewController {
         self.view = self.mvvmView
     }
     
-    func handleEvent(firstName: String?) {
+    func handleEvent(firstName: String?) throws {
         guard let firstName = firstName else {
-            return
+            throw EventError.EmptyEvent
         }
         mvvmViewModel.updateFirstName(to: firstName)
     }
@@ -45,4 +45,11 @@ class HelloViewController: UIViewController {
         self.mvvmView?.updateView(entity: entity)
     }
 
+}
+
+
+enum EventError : Error {
+    case EmptyEvent
+    case InvalidEvent
+    case unknownEvent
 }

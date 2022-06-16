@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00D00488285A50A100E3F65D /* HelloMVVMViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D00487285A50A100E3F65D /* HelloMVVMViewModelTests.swift */; };
+		00D00491285A523600E3F65D /* HelloMVVMControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D00490285A523600E3F65D /* HelloMVVMControllerTests.swift */; };
 		56CD555F2858028000C81F37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CD555E2858028000C81F37 /* AppDelegate.swift */; };
 		56CD55612858028000C81F37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CD55602858028000C81F37 /* SceneDelegate.swift */; };
 		56CD55632858028000C81F37 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CD55622858028000C81F37 /* HelloViewController.swift */; };
@@ -18,7 +20,20 @@
 		56CD55812858087700C81F37 /* PersonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CD55802858087700C81F37 /* PersonEntity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00D00489285A50A100E3F65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56CD55532858028000C81F37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56CD555A2858028000C81F37;
+			remoteInfo = HelloMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00D00485285A50A100E3F65D /* HelloMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D00487285A50A100E3F65D /* HelloMVVMViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMVVMViewModelTests.swift; sourceTree = "<group>"; };
+		00D00490285A523600E3F65D /* HelloMVVMControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloMVVMControllerTests.swift; sourceTree = "<group>"; };
 		56CD555B2858028000C81F37 /* HelloMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CD555E2858028000C81F37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56CD55602858028000C81F37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00D00482285A50A100E3F65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56CD55582858028000C81F37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +65,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D00486285A50A100E3F65D /* HelloMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D0048F285A521A00E3F65D /* ControllersTests */,
+				00D0048E285A520C00E3F65D /* ViewModelTests */,
+			);
+			path = HelloMVVMTests;
+			sourceTree = "<group>";
+		};
+		00D0048E285A520C00E3F65D /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D00487285A50A100E3F65D /* HelloMVVMViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		00D0048F285A521A00E3F65D /* ControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D00490285A523600E3F65D /* HelloMVVMControllerTests.swift */,
+			);
+			path = ControllersTests;
+			sourceTree = "<group>";
+		};
 		56CD55522858028000C81F37 = {
 			isa = PBXGroup;
 			children = (
 				56CD555D2858028000C81F37 /* HelloMVVM */,
+				00D00486285A50A100E3F65D /* HelloMVVMTests */,
 				56CD555C2858028000C81F37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				56CD555B2858028000C81F37 /* HelloMVVM.app */,
+				00D00485285A50A100E3F65D /* HelloMVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +168,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00D00484285A50A100E3F65D /* HelloMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D0048D285A50A100E3F65D /* Build configuration list for PBXNativeTarget "HelloMVVMTests" */;
+			buildPhases = (
+				00D00481285A50A100E3F65D /* Sources */,
+				00D00482285A50A100E3F65D /* Frameworks */,
+				00D00483285A50A100E3F65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D0048A285A50A100E3F65D /* PBXTargetDependency */,
+			);
+			name = HelloMVVMTests;
+			productName = HelloMVVMTests;
+			productReference = 00D00485285A50A100E3F65D /* HelloMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		56CD555A2858028000C81F37 /* HelloMVVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56CD556F2858028200C81F37 /* Build configuration list for PBXNativeTarget "HelloMVVM" */;
@@ -143,9 +210,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					00D00484285A50A100E3F65D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 56CD555A2858028000C81F37;
+					};
 					56CD555A2858028000C81F37 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -165,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				56CD555A2858028000C81F37 /* HelloMVVM */,
+				00D00484285A50A100E3F65D /* HelloMVVMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00D00483285A50A100E3F65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56CD55592858028000C81F37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +261,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00D00481285A50A100E3F65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D00491285A523600E3F65D /* HelloMVVMControllerTests.swift in Sources */,
+				00D00488285A50A100E3F65D /* HelloMVVMViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56CD55572858028000C81F37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +286,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		00D0048A285A50A100E3F65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56CD555A2858028000C81F37 /* HelloMVVM */;
+			targetProxy = 00D00489285A50A100E3F65D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		56CD55692858028200C81F37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -210,6 +306,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00D0048B285A50A100E3F65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 685GVH2XJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thiagohba.com.HelloMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloMVVM.app/HelloMVVM";
+			};
+			name = Debug;
+		};
+		00D0048C285A50A100E3F65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 685GVH2XJC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thiagohba.com.HelloMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloMVVM.app/HelloMVVM";
+			};
+			name = Release;
+		};
 		56CD556D2858028200C81F37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,6 +519,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00D0048D285A50A100E3F65D /* Build configuration list for PBXNativeTarget "HelloMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D0048B285A50A100E3F65D /* Debug */,
+				00D0048C285A50A100E3F65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		56CD55562858028000C81F37 /* Build configuration list for PBXProject "HelloMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

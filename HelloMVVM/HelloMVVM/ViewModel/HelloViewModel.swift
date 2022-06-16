@@ -9,14 +9,14 @@ import Foundation
 
 class HelloViewModel {
     
-    private var mvvmModel: HelloModel {
+    var mvvmModel: HelloModel {
         didSet {
             sendEntityToView()
         }
     }
     
     public var controller: HelloViewController?
-    
+
     var personEntity: PersonEntity!
     
     init(model: HelloModel) {
